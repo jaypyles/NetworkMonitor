@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Network Monitor</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+      $(document).ready(function () {
+        updateNetworkData();
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Network Monitor</h1>
+    <div id="speeds">
+      <div id="download-speed">Loading</div>
+      <div id="upload-speed">Loading</div>
+      <div id="ping">Loading</div>
+    </div>
+  </body>
+</html>
