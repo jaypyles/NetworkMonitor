@@ -29,3 +29,15 @@ function updateNetworkData() {
     },
   });
 }
+
+function callDocker() {
+  $.ajax({
+    url: "/routes/docker_ps",
+    type: "GET",
+    dataType: "json",
+    success: function (response) {
+      // Update the content of the container element with the new upload speed
+      $("#code").text(response.running);
+    },
+  });
+}
