@@ -1,6 +1,8 @@
+# PDM
 from flask import Blueprint
 
-from routes.system import docker_ps
+# LOCAL
+from utils.system import docker_ps
 
 system_bp = Blueprint("system_routes", __name__)
 

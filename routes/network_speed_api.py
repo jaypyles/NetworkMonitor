@@ -1,8 +1,11 @@
+# STL
 import asyncio
 
+# PDM
 from flask import Blueprint
 
-from routes.network_speed import get_download, get_ping, get_upload
+# LOCAL
+from utils.network_speed import get_ping, get_upload, get_download
 
 network_speed_bp = Blueprint("network_speed_routes", __name__)
 
