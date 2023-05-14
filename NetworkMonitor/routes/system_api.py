@@ -9,9 +9,8 @@ system_bp = Blueprint("system_routes", __name__)
 
 @system_bp.route("/docker_ps", methods=["GET"])
 def call_docker_ps():
-    output = docker_ps()
-    response = {"running": output}
-    return response
+    containers = docker_ps()
+    return {"containers": containers}
 
 
 @system_bp.route("/system_info", methods=["GET"])

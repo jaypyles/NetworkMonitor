@@ -12,6 +12,7 @@ dependencies = [
     "Flask[async]>=2.3.2",
     "asyncio>=3.4.3",
     "psutil>=5.9.5",
+    "docker>=6.1.2",
 ]
 requires-python = ">=3.11"
 license = {text = "MIT"}
@@ -27,7 +28,7 @@ import_heading_firstparty = "LOCAL"
 import_heading_localfolder = "LOCAL"
 
 [tool.pyright]
-include = [""]
+include = ["NetworkMonitor"]
 exclude = ["**/node_modules", "**/__pycache__"]
 ignore = []
 defineConstant = { DEBUG = true }

@@ -39,3 +39,13 @@ function callSystemInfo() {
     },
   });
 }
+function generateDockerTable() {
+  $.ajax({
+    url: "/routes/docker_ps",
+    type: "GET",
+    dataType: "json",
+    success: function (response) {
+      $("#docker-status").text(response.containers);
+    },
+  });
+}

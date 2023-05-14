@@ -11,6 +11,8 @@
     <script src="{{ url_for('static', filename='script.js') }}"></script>
     <script>
       $(document).ready(function () {
+        generateDockerTable();
+        setInterval(generateDockerTable, 10000);
         callSystemInfo();
         updateNetworkData();
       });
@@ -24,9 +26,8 @@
       <div id="ping">Loading</div>
     </div>
     <div id="docker">
-      <button onClick="callDocker()">Check Docker</button>
-      <br />
-      <code id="code"></code>
+      <h1>Docker Status</h1>
+      <pre id="docker-status"></pre>
     </div>
     <div id="system">
       <h1 id="hostname"></h1>
