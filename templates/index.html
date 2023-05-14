@@ -11,6 +11,7 @@
     <script src="{{ url_for('static', filename='script.js') }}"></script>
     <script>
       $(document).ready(function () {
+        callSystemInfo();
         updateNetworkData();
       });
     </script>
@@ -26,6 +27,10 @@
       <button onClick="callDocker()">Check Docker</button>
       <br />
       <code id="code"></code>
+    </div>
+    <div id="system">
+      <h1 id="hostname"></h1>
+      <h1 id="ip"></h1>
     </div>
   </body>
 </html>
