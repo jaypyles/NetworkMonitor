@@ -5,7 +5,7 @@ import asyncio
 from flask import Blueprint
 
 # LOCAL
-from utils.network_speed import get_ping, get_upload, get_download
+from NetworkMonitor.utils.network_speed import get_ping, get_upload, get_download
 
 network_speed_bp = Blueprint("network_speed_routes", __name__)
 

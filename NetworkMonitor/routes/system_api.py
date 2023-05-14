@@ -2,7 +2,7 @@
 from flask import Blueprint
 
 # LOCAL
-from utils.system import get_ip, docker_ps, get_hostname
+from NetworkMonitor.utils.system import get_ip, docker_ps, get_hostname
 
 system_bp = Blueprint("system_routes", __name__)
 

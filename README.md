@@ -5,4 +5,6 @@ A webapp for monitoring network information on my small server. Made specificall
 # To-Do:
 
 - [ ] Dockerize
-- [ ] Network information including what docker containers are active, etc.
+- [ ] View what ssh clients are connected
+- [ ] View current active docker containers
+- [ ] View docker logs
