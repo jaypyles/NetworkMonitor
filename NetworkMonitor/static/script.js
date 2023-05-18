@@ -36,6 +36,8 @@ function callSystemInfo() {
       // Update the content of the container element with the new upload speed
       $("#hostname").text(response.hostname);
       $("#ip").text(response.ip);
+      $("#cpu").text(`CPU usage: ${response.cpu}%`);
+      $("#ram").text(`RAM usage: ${response.ram}%`);
     },
   });
 }

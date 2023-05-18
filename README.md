@@ -5,7 +5,8 @@ A webapp for monitoring network information on my small server. Made specificall
 # To-Do:
 
 - [ ] Dockerize
+- [ ] Convert frontend to React
 - [ ] View what ssh clients are connected
 - [x] View current active docker containers
-- [ ] View docker logs
-- [ ] View cpu, ram, and disk usage
+- [x] View docker logs
+- [x] View cpu, ram, and disk usage
