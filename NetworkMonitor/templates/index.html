@@ -18,9 +18,11 @@
         updateNetworkData();
       });
     </script>
+    <script src="{{ url_for('static', filename='build/static/js/main.js') }}"></script>
   </head>
   <body>
     <h1>Network Monitor</h1>
+    <div id="root"></div>
     <div id="speeds">
       <div id="download-speed">Loading</div>
       <div id="upload-speed">Loading</div>
