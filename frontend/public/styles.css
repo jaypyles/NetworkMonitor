@@ -1,0 +1,14 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.docker {
+  margin: 0;
+  font-size: 95%;
+  border: 1px solid white; /* Add this line to set a white border with a width of 1px */
+}
+
+.docker h1 {
+  color: blue;
+}

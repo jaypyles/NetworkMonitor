@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Network Monitor</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      $(document).ready(function () {
+        generateDockerTable();
+        setInterval(generateDockerTable, 10000);
+        callSystemInfo();
+        setInterval(callSystemInfo, 10000);
+        updateNetworkData();
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Network Monitor</h1>
+    <div id="root"></div>
+    <div id="speeds">
+      <div id="download-speed">Loading</div>
+      <div id="upload-speed">Loading</div>
+      <div id="ping">Loading</div>
+    </div>
+    <div class="docker" id="docker">
+      <h1>Docker Status</h1>
+      <pre id="docker-status"></pre>
+    </div>
+    <div id="system">
+      <h1 id="hostname"></h1>
+      <h1 id="ip"></h1>
+      <h1 id="cpu"></h1>
+      <h1 id="ram"></h1>
+    </div>
+  </body>
+</html>
