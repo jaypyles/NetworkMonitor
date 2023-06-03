@@ -2,8 +2,30 @@ body {
   background-color: black;
   color: white;
 }
-
-.docker {
-  margin: 0;
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  align-content: start;
+}
+.app-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
+.content {
+  margin: auto;
+}
+#docker {
   font-size: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#docker h2 {
+  text-decoration: underline;
 }

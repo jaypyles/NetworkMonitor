@@ -5,8 +5,8 @@ function App() {
   return (
     <>
       <NetworkStats />
-      <Docker />
       <System />
+      <Docker />
     </>
   );
 }

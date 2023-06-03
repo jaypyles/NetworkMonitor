@@ -25,7 +25,7 @@ function System() {
   }, []);
 
   return (
-    <div id="system">
+    <div className="content system" id="system">
       <h1 id="hostname">{hostname}</h1>
       <h1 id="ip">{ip}</h1>
       <h1 id="cpu">{cpu}</h1>

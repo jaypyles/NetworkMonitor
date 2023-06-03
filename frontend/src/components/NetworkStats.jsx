@@ -27,7 +27,7 @@ function NetworkStats() {
     callSystemInfo();
   }, []);
   return (
-    <div id="speeds">
+    <div className="content speeds" id="speeds">
       <div id="download-speed">{download}</div>
       <div id="upload-speed">{upload}</div>
       <div id="ping">{ping}</div>

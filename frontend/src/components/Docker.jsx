@@ -20,8 +20,8 @@ function Docker() {
     };
   }, []);
   return (
-    <div className="docker" id="docker">
-      <h1>Docker Status</h1>
+    <div className="content docker" id="docker">
+      <h2>Docker Status</h2>
       <pre id="docker-status">{dockerStatus}</pre>
     </div>
   );
