@@ -6,5 +6,5 @@ A webapp for monitoring network information on my small server. Made specificall
 
 - [ ] Dockerize
 - [x] Convert frontend to React
-- [ ] Update React components for different sections
+- [x] Update React components for different sections
 - [ ] View what ssh clients are connected
