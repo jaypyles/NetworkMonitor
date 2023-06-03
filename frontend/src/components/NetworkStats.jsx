@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 function NetworkStats() {
-  const [download, setDownload] = useState("loading");
-  const [upload, setUpload] = useState("loading");
-  const [ping, setPing] = useState("loading");
+  const [download, setDownload] = useState("Download speed loading...");
+  const [upload, setUpload] = useState("Upload speed loading...");
+  const [ping, setPing] = useState("Ping loading...");
   useEffect(() => {
     const callSystemInfo = () => {
       Promise.all([
@@ -28,6 +28,7 @@ function NetworkStats() {
   }, []);
   return (
     <div className="content speeds" id="speeds">
+      <h2> Download, Upload, Ping </h2>
       <div id="download-speed">{download}</div>
       <div id="upload-speed">{upload}</div>
       <div id="ping">{ping}</div>

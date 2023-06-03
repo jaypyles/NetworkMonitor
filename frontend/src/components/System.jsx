@@ -11,10 +11,10 @@ function System() {
       fetch("routes/system_info")
         .then((response) => response.json())
         .then((data) => {
-          updateHostname("Hostname: " + data.hostname);
-          updateIP("IP: " + data.ip);
-          updateCPU("CPU: " + data.cpu + "%");
-          updateRAM("RAM: " + data.ram + "%");
+          updateHostname(data.hostname);
+          updateIP(data.ip);
+          updateCPU(data.cpu);
+          updateRAM(data.ram);
         });
     };
     callSystem();
@@ -26,11 +26,33 @@ function System() {
 
   return (
     <div className="content system" id="system">
-      <h1 id="hostname">{hostname}</h1>
-      <h1 id="ip">{ip}</h1>
-      <h1 id="cpu">{cpu}</h1>
-      <h1 id="ram">{ram}</h1>
+      <h2> System Stats </h2>
+      <p className="title">
+        <strong>
+          <u>Hostname:</u>
+        </strong>{" "}
+        {hostname}
+      </p>
+      <p className="title">
+        <strong>
+          <u>IP:</u>
+        </strong>{" "}
+        {ip}
+      </p>
+      <p className="title">
+        <strong>
+          <u>CPU:</u>
+        </strong>{" "}
+        {cpu}%
+      </p>
+      <p className="title">
+        <strong>
+          <u>RAM:</u>
+        </strong>{" "}
+        {ram}%
+      </p>
     </div>
   );
 }
+
 export default System;

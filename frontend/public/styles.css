@@ -18,6 +18,19 @@ body {
 }
 .content {
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content.system p {
+  margin: auto;
+}
+.content.system h2 {
+  text-decoration: underline;
+}
+.content.speeds h2 {
+  text-decoration: underline;
 }
 #docker {
   font-size: 95%;
