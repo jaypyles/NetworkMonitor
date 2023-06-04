@@ -1,5 +1,8 @@
 [tool.pdm]
 
+[tool.setuptools]
+py-modules = ["NetworkMonitor"]
+
 [project]
 name = "NetworkMonitor"
 version = "0.0.1"
