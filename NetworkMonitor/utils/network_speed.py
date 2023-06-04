@@ -4,7 +4,7 @@ import asyncio
 # PDM
 import speedtest
 
-st = speedtest.Speedtest()
+st = speedtest.Speedtest(secure=True)
 
 
 async def get_download():
