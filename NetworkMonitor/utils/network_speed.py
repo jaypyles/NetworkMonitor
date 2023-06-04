@@ -1,5 +1,7 @@
+# STL
 import asyncio
 
+# PDM
 import speedtest
 
 st = speedtest.Speedtest()
