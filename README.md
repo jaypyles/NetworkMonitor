@@ -4,6 +4,5 @@ A webapp for monitoring network information on my small server. Made specificall
 
 # To-Do:
 
-- [ ] Dockerize
 - [x] Convert frontend to React
 - [x] Update React components for different sections
