@@ -9,6 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   align-content: start;
+  flex-direction: row;
 }
 .app-title {
   display: flex;
